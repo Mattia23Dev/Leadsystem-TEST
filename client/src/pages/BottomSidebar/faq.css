@@ -1,0 +1,30 @@
+.faq-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 70%;
+}
+.faq-container-closed{
+    position: absolute;
+    left: 46%;
+    transform: translateX(-40%);
+    width: 80%;
+}
+.faq-top{
+    margin: 70px 0;
+}
+@media screen and (max-width: 500px) {
+    .faq-container{
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+    .faq-top{
+        margin-top: 50px !important;
+        text-align: center;
+    }
+    .faq{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

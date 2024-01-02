@@ -1,0 +1,315 @@
+.header {
+    display: flex;
+    position: fixed;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    inset: 0 82% 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.06);
+    background-color: white;
+}
+
+.header-mobile {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    inset: 0 95% 0 0;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.06);
+    justify-content: space-between;
+}
+
+.sidebar-admin {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.sidebar-admin .ul-item {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-block: 0rem;
+    list-style: none;
+    position: relative;
+    height: 85vh;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+}
+
+.sidebar-admin .ul-item.oicon a {
+    // display: none;
+}
+
+.sidebar-admin .ul-item.oicon p,
+.sidebar-admin .ul-item.oicon .bottom-icon-arrow,
+.sidebar-admin .ul-item.oicon .icon-arrow {
+    display: none;
+}
+
+.sidebar-admin .ul-item li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding-block: 1rem;
+    margin-block: 0rem;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: 10px;
+    top: 23px;
+}
+
+.bottom-icon-arrow {
+    position: absolute;
+    right: 10px;
+}
+
+.middle-sidebar li:hover>.icon-arrow {
+    color: white;
+}
+
+.middle-sidebar {
+    padding: 0px 5px 0px 20px;
+}
+
+.bottom-sidebar-admin li:hover>.bottom-icon-arrow {
+    color: #973031;
+}
+
+.middle-sidebar>p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+}
+
+.bottom-sidebar-admin {
+    background-color: #973031;
+    color: white;
+    width: 100%;
+    padding: 25px 5px 25px 20px;
+}
+
+.bottom-sidebar-admin li a {
+    color: white !important;
+}
+
+.bottom-sidebar-admin li:hover {
+    border-radius: 10px;
+    background-color: white !important;
+}
+
+.bottom-sidebar-admin li:hover .bottom-icon {
+    color: #973031 !important;
+}
+
+.bottom-sidebar-admin li:hover a {
+    color: #973031 !important;
+}
+
+.bottom-icon {
+    color: white;
+    margin-inline: 1rem;
+    font-size: 28px !important;
+}
+
+// .bottom-sidebar-admin>li:last-of-type {
+//     text-decoration: underline;
+//     padding-left: 30px;
+// }
+
+.sidebar-admin .ul-item li:hover {
+    background-color: #973031;
+    border-radius: 10px;
+}
+
+.sidebar-admin .ul-item li:hover .icon {
+    color: white;
+}
+
+.sidebar-admin .ul-item li:hover a {
+    color: white;
+}
+
+.sidebar-admin .ul-item li .icon {
+    color: rgba(0, 0, 0, 0.505);
+    margin-inline: 1rem;
+    font-size: 28px !important;
+}
+
+.sidebar-admin .ul-item.oicon li .icon {
+    font-size: 28px !important;
+}
+
+.sidebar-admin .ul-item li a {
+    text-decoration: none;
+    color: #00000088;
+    padding-left: 1rem;
+}
+
+.menu-icon {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon .menu {
+    color: rgba(0, 0, 0, 0.505);
+    /* margin-block: 1rem; */
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.sidebar-admin .ul-item li:hover {
+    transition: 1s ease;
+}
+
+.logo {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav .selectedAdmin {
+    background-color: #973031 !important;
+}
+
+nav .selectedAdmin a {
+    color: white !important;
+}
+
+nav .selectedAdmin svg {
+    fill: white !important;
+}
+
+nav.sidebar-admin .selectedBlue a {
+    color: #973031 !important;
+}
+
+nav.sidebar-admin .selectedBlue svg {
+    fill: #973031 !important;
+}
+
+
+.sidebar-admin .ul-item.oicon {
+    a{
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* @media (max-width:900px) {
+    .header-mobile {
+        inset: 0 90% 0 0;
+        justify-content: center;
+    }
+
+    .sidebar-admin .ul-item {
+        display: none;
+    }
+
+    .sidebar-admin .ul-item.oicon {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .sidebar-admin .ul-item li .icon {
+        font-size: clamp(1rem, 2vw + 1rem, 4rem);
+    }
+} */
+
+/* @media screen and (max-width:500px) {
+    .header {
+        position: absolute;
+    }
+
+    .header-mobile {
+        position: absolute;
+    }
+
+    .sidebar-admin .ul-item {
+        display: block;
+        width: 100% !important;
+        height: 100vh !important;
+    }
+
+    .sidebar-admin .ul-item.oicon {
+        display: flex !important;
+        display: none;
+    }
+
+    .menu-icon {
+        position: absolute !important;
+        left: 10px;
+        top: 10px;
+        margin-inline: 1rem;
+        display: block !important;
+        z-index: 1000;
+        padding: 0px;
+    }
+
+    .middle-sidebar>h2 {
+        margin-top: 30px;
+    }
+
+    .menu-icon .menu {
+        color: rgba(0, 0, 0, 0.505);
+        margin-block: 1rem;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .sidebar-admin .ul-item li .icon {
+        font-size: clamp(1rem, 2vw + 1rem, 4rem);
+    }
+
+    .sidebar-admin .ul-item.oicon a {
+        display: none;
+    }
+
+    .sidebar-admin .ul-item.oicon p,
+    .sidebar-admin .ul-item.oicon h2,
+    .sidebar-admin .ul-item.oicon .bottom-icon-arrow,
+    .sidebar-admin .ul-item.oicon .icon-arrow {
+        display: none;
+    }
+
+    .sidebar-admin .ul-item .bottom-sidebar-admin,
+    .sidebar-admin .ul-item .middle-sidebar {
+        display: block;
+    }
+
+    .sidebar-admin .oicon .bottom-sidebar-admin {
+        display: none;
+    }
+
+    .sidebar-admin .oicon .middle-sidebar {
+        display: none;
+    }
+} */
