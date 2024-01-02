@@ -1303,6 +1303,7 @@ const subscriptionStatus = async() => {
   console.log('Eseguo calculate Lead Tag di prova');
 });*/
 
+/*
 cron.schedule('30 7 * * *', () => {
   subscriptionStatus();
   console.log('Eseguito il reset del counter');
@@ -1338,7 +1339,7 @@ cron.schedule('01 8,9,10,11,12,14,15,16,17,18,19,20,21,22,23 * * *', () => {
 cron.schedule('47 7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23 * * *', () => {
   console.log('Eseguo l\'assegnazione a Ecp solo comparatore');
   calculateAndAssignLeadsEveryDayWordpressComparatore();
-});
+});*/
 
 exports.dailyCap = async (req, res) => {
   try {
